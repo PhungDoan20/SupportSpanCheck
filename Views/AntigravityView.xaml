@@ -1,0 +1,89 @@
+<Window x:Class="SupportSpanCheck.Views.AntigravityView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SupportSpanCheck.Views"
+        xmlns:viewmodels="clr-namespace:SupportSpanCheck.ViewModels"
+        mc:Ignorable="d"
+        Title="SUPPORT SPAN CHECK" Height="550" Width="700"
+        WindowStartupLocation="CenterScreen" Topmost="True">
+    <TabControl Margin="10">
+        <!-- Tab 1: Quét và Hiển thị -->
+        <TabItem Header="Kiểm tra nhịp (Scan)">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,0,0,10">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Button Content="Quét / Check Supports" Command="{Binding ScanCommand}" Width="150" Height="30" />
+                        <TextBlock Text="{Binding StatusMessage}" Foreground="Red" FontWeight="Bold" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                        <TextBlock Text="Chế độ hiển thị: " VerticalAlignment="Center" FontWeight="Bold" Margin="0,0,10,0"/>
+                        <RadioButton Content="ALL" 
+                                     IsChecked="{Binding ShowAllSpans}" 
+                                     Margin="0,0,20,0" VerticalAlignment="Center" />
+                        <RadioButton Content="Vượt quá giới hạn" 
+                                     IsChecked="{Binding ShowOnlyViolated}" 
+                                     VerticalAlignment="Center" />
+                    </StackPanel>
+                </StackPanel>
+
+                <DataGrid Grid.Row="1" ItemsSource="{Binding DisplaySpanItems}" AutoGenerateColumns="False" 
+                          CanUserAddRows="False" IsReadOnly="True" SelectionMode="Single">
+                    <DataGrid.InputBindings>
+                        <MouseBinding MouseAction="LeftDoubleClick" 
+                                      Command="{Binding RowDoubleClickCommand}" 
+                                      CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=DataGrid}, Path=SelectedItem}" />
+                    </DataGrid.InputBindings>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="STT" Binding="{Binding Index}" Width="50" />
+                        <DataGridTextColumn Header="Line Number" Binding="{Binding LineNumber}" Width="150" />
+                        <DataGridTextColumn Header="Size" Binding="{Binding PipeSize}" Width="60" />
+                        <DataGridTextColumn Header="Insulation Thickness" Binding="{Binding InsulationThickness}" Width="130" />
+                        <DataGridTextColumn Header="Khoảng cách thực tế" Binding="{Binding ActualSpan, StringFormat=N2}" Width="*">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="Black"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsViolated}" Value="True">
+                                            <Setter Property="Foreground" Value="Red"/>
+                                            <Setter Property="FontWeight" Value="Bold"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Giới hạn" Binding="{Binding MaxSpan, StringFormat=N2}" Width="80" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </TabItem>
+
+        <!-- Tab 2: Cài đặt tiêu chuẩn -->
+        <TabItem Header="Tiêu chuẩn nhịp (Standards)">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                
+                <DataGrid Grid.Row="0" ItemsSource="{Binding SpanStandards}" AutoGenerateColumns="False" 
+                          CanUserAddRows="True" CanUserDeleteRows="True" Margin="0,0,0,10">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Kích thước ống (Size)" Binding="{Binding Size}" Width="150" />
+                        <DataGridTextColumn Header="Khoảng cách tối đa" Binding="{Binding MaxSpan}" Width="*" />
+                        <DataGridTextColumn Header="Khoảng cách tối đa (INSULATION)" Binding="{Binding MaxSpanInsulated}" Width="*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <Button Grid.Row="1" Content="Lưu cấu hình (Save Settings)" Command="{Binding SaveSettingsCommand}" Width="200" Height="30" HorizontalAlignment="Right" />
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>

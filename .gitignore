@@ -1,0 +1,18 @@
+# Visual Studio / .NET
+[Oo]bj/
+[Bb]in/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.log
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Autocad
+*.bak
+*.dwl
+*.dwl2

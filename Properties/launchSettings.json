@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SupportSpanCheck": { "commandName": "Project" },
+    "Plant3D2027": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\Autodesk\\AutoCAD 2027\\acad.exe",
+      "commandLineArgs": "/product PLNT3D /language \"en-US\""
+    }
+  }
+}

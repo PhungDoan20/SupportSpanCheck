@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <PlatformTarget>x64</PlatformTarget>
+    <Nullable>enable</Nullable>
+    <RootNamespace>SupportSpanCheck</RootNamespace>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>SupportSpanCheck_v19</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
+    <Reference Include="acdbmgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2027 SDK\inc\AcDbMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="acmgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2027 SDK\inc\AcMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="accoremgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2027 SDK\inc\AcCoreMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Plant 3D SDK References -->
+  <ItemGroup>
+    <Reference Include="PnIDMgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2027 SDK\inc-x64\PnIDMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnPDataLinks">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2027 SDK\inc-x64\PnPDataLinks.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnPDataObjects">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2027 SDK\inc-x64\PnPDataObjects.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnPProjectManagerMgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2027 SDK\inc-x64\PnPProjectManagerMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnPCommonMgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2027 SDK\inc-x64\PnPCommonMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnPCommonDbxMgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2027 SDK\inc-x64\PnPCommonDbxMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnIdProjectPartsMgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2027 SDK\inc-x64\PnIdProjectPartsMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnP3dObjectsMgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2027 SDK\inc-x64\PnP3dObjectsMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
