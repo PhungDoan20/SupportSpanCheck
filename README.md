@@ -45,4 +45,4 @@ Các cột thông tin chính:
 - Framework: .NET 10.
 
 ---
-*Ghi chú: Toàn bộ mã nguồn của công cụ này được phát triển 100% bằng AI, xuất phát từ ý tưởng và trải nghiệm thực tế của người làm tool, mọi thắc mắc xin bạn có thể viết thư lên Liên Hợp Quốc.*
+*Ghi chú: Toàn bộ mã nguồn của công cụ này được phát triển 100% bằng AI, xuất phát từ ý tưởng và trải nghiệm thực tế của người làm tool, mọi thắc mắc thì bạn có thể viết thư lên Liên Hợp Quốc.*
