@@ -45,4 +45,4 @@ Các cột thông tin chính:
 - Framework: .NET 10.
 
 ---
-*Ghi chú: Toàn bộ mã nguồn của công cụ này được phát triển 100% bằng trí tuệ nhân tạo (AI), xuất phát từ ý tưởng và trải nghiệm thực tế của người dùng.*
+*Ghi chú: Toàn bộ mã nguồn của công cụ này được phát triển 100% bằng AI, xuất phát từ ý tưởng và trải nghiệm thực tế của người dùng.*
