@@ -42,7 +42,7 @@ Các cột thông tin chính:
 
 ## 🛠 Yêu cầu hệ thống
 - Nền tảng: AutoCAD Plant 3D 2027.
-- Framework: .NET Framework tương thích với phiên bản AutoCAD hiện tại.
+- Framework: .NET 10.
 
 ---
-*Phát triển bởi Phùng Doãn.*
+*Ghi chú: Toàn bộ mã nguồn của công cụ này được phát triển 100% bằng trí tuệ nhân tạo (AI), xuất phát từ ý tưởng và trải nghiệm thực tế của người dùng.*
