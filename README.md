@@ -4,16 +4,6 @@
 
 ---
 
-## 🌟 Các tính năng nổi bật
-- **Quét siêu tốc:** Thuật toán tối ưu hóa (O(1)) truy xuất trực tiếp vào cơ sở dữ liệu `PipeRunComponent` và `PipingLineGroup` của Plant 3D, không gây giật lag kể cả với các dự án siêu lớn.
-- **Tự động nhận diện bọc bảo ôn (Insulation):** Tool thông minh tự động đọc độ dày bảo ôn của đường ống và phân loại tiêu chuẩn khoảng cách cho ống trần và ống bọc bảo ôn.
-- **Tính toán U-Bend chuẩn xác:** Có khả năng đọc hiểu và đo chính xác chiều dài qua các đoạn Co chữ U (U-Bend / Return Bend).
-- **Phát hiện Support "mồ côi":** Cảnh báo lập tức nếu có Support nào chưa được bắt chính xác vào tâm đường ống.
-- **Đồng bộ với mô hình thực tế:** Chạm 2 lần (Double-click) vào bất kỳ cảnh báo nào trên giao diện, màn hình AutoCAD sẽ tự động Zoom thẳng đến 2 Support đó trên bản vẽ 3D.
-- **Tuỳ biến tiêu chuẩn linh hoạt:** Người dùng có thể dễ dàng thêm, bớt, sửa đổi kích thước ống và khoảng cách tối đa theo từng tiêu chuẩn dự án.
-
----
-
 ## 📥 Hướng dẫn cài đặt và sử dụng
 
 ### 1. Tải và nạp Tool (Load Plugin)
@@ -51,7 +41,7 @@ Các cột thông tin chính:
 ---
 
 ## 🛠 Yêu cầu hệ thống
-- Nền tảng: AutoCAD Plant 3D (Khuyên dùng bản 2021 trở lên).
+- Nền tảng: AutoCAD Plant 3D 2027.
 - Framework: .NET Framework tương thích với phiên bản AutoCAD hiện tại.
 
 ---
