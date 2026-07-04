@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <PlatformTarget>x64</PlatformTarget>
+    <Nullable>enable</Nullable>
+    <RootNamespace>SupportSpanCheck</RootNamespace>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>SupportSpanCheck_2026_v19</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
+    <Reference Include="acdbmgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2026 SDK\inc\AcDbMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="acmgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2026 SDK\inc\AcMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="accoremgd">
+      <HintPath>E:\AI\AutoCAD Plant 3D 2026 SDK\inc\AcCoreMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Plant 3D SDK References -->
+  <ItemGroup>
+    <Reference Include="PnIDMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\PLNT3D\PnIDmgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnPDataLinks">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\PnPDataLinks.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnPDataObjects">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\PnPDataObjects.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnPProjectManagerMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\PLNT3D\PnPProjectManagerMgd.DLL</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnPCommonMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\PnPCommonMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnPCommonDbxMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\PnPCommonDbxMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnIdProjectPartsMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\PLNT3D\PnIdProjectPartsMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PnP3dObjectsMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\PLNT3D\PnP3dObjectsMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
