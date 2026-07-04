@@ -12,7 +12,7 @@
 3. Bấm Open để nạp plugin vào phần mềm.
 
 ### 2. Khởi chạy và Quét Support
-1. Sau khi `NETLOAD` thành công, gõ lệnh `CHECKSPAN` vào dòng lệnh AutoCAD.
+1. Sau khi `NETLOAD` thành công, gõ lệnh `SUPPORTSPANCHECK` vào dòng lệnh AutoCAD.
 2. Giao diện **SUPPORT SPAN CHECK** sẽ xuất hiện.
 3. Bấm nút **Quét / Check Supports**. Tool sẽ quét toàn bộ mô hình 3D và liệt kê tất cả các nhịp Support ra màn hình.
 
